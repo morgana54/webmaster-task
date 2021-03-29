@@ -1,0 +1,462 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+.technology {
+  height: 60vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.technology__header {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 36px;
+}
+
+.technology__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-bottom: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.technology__box {
+  position: relative;
+  width: 230px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 30px;
+}
+
+.technology__box .technology__box__bg {
+  justify-self: flex-start;
+  height: 50%;
+}
+
+.technology__box .technology__box__bg .technology__num {
+  font-size: 100px;
+  color: rgba(16, 16, 16, 0.08);
+}
+
+.technology__box .technology__box__bg .technology__icon {
+  position: relative;
+  top: -45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: block;
+}
+
+.technology__box .technology__title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.technology__box .technology__desc {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.features {
+  height: 90vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.features__header {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 36px;
+}
+
+.features__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features__box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.features__box .features__bgBox {
+  justify-self: flex-start;
+}
+
+.features__box .features__textBox {
+  position: relative;
+  top: -80px;
+  z-index: 1;
+  background-color: white;
+  width: 260px;
+  height: 300px;
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.features__box .features__textBox .features__title {
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.features__box .features__textBox .features__desc {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.contact {
+  height: 80vh;
+  width: 100vw;
+}
+
+.contact__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.contact__container .contact__textBox {
+  width: 50%;
+  height: 80%;
+}
+
+.contact__container .contact__inputBox {
+  width: 50%;
+  height: 80%;
+}
+
+.message {
+  height: 80vh;
+  width: 100vw;
+  background-color: #ED4C5C;
+  color: white;
+}
+
+.message__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.message__container .message__textBox {
+  width: 50%;
+  height: 80%;
+}
+
+.message__container .message__pictures {
+  width: 50%;
+  height: 80%;
+}
+
+:root {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  letter-spacing: 1px;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero--bg1 {
+  background: url(../media/bg-hero.png);
+  background-size: cover;
+  position: relative;
+}
+
+.hero--bg1 .hero--bg2 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(213, 32, 71, 0.8)), to(rgba(238, 61, 27, 0.8)));
+  background: linear-gradient(90deg, rgba(213, 32, 71, 0.8), rgba(238, 61, 27, 0.8));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero__navbar {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100px;
+  letter-spacing: 1px;
+}
+
+.hero__navbar #check {
+  float: right;
+}
+
+.hero__navbar .hero__navbar__title {
+  font-size: 18px;
+  width: 30vw;
+  margin: 0 14vw;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__navbar .hero__navbar__title::before {
+  content: '';
+  height: 21px;
+  width: 25px;
+  display: inline-block;
+  background: url(../media/cloud.png);
+  background-repeat: no-repeat;
+  padding: 0 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.hero__navbar .hero__navbar__list {
+  font-size: 14px;
+  width: 70vw;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+  margin: 0 11vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.hero__navbar .hero__navbar__list li {
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+.hero__navbar .hero__navbar__list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero__container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero__container .hero__container__title {
+  font-size: 3.8vw;
+  font-weight: 700;
+  padding: 0 30vw;
+}
+
+.hero__container .hero__container__desc {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 5vh;
+}
+
+.hero__container .hero__container__btn {
+  border-radius: 3px;
+  border: 0;
+  background-color: white;
+  color: #D52047;
+  padding: 16px 51px;
+  font-size: 14px;
+  margin-top: 5vh;
+}
+
+.hero__container .hero__container__btn:focus {
+  outline: none;
+}
+
+@media (max-width: 940px) {
+  .hero__navbar__list {
+    position: absolute;
+    top: 100px;
+    background-color: #D52047;
+  }
+}
+
+/* zaplanuj SCSSa dokładnie i zapisz jakieś vary czy coś żeby potem łatwiej było czy żebyś mógł ładniej potem i MNIEJ pisać rzeczywiście */
+/* UŻYWAĆ MIXINÓW! */
+/*# sourceMappingURL=style.css.map */

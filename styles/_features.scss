@@ -1,0 +1,54 @@
+.features {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.features__header {
+    height: 200px;
+    @include flexCenter(row);
+    font-size: 36px;
+}
+
+.features__container {
+    @include flexCenter(row);
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.features__box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    @include flexCenter(column);
+
+    .features__bgBox {
+        justify-self: flex-start;
+    }
+
+    .features__textBox {
+        position: relative;
+        top: -80px;
+        z-index: 1;
+        background-color: white;
+        width: 260px;
+        height: 300px;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        @include flexCenter(column);
+
+        .features__title {
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .features__desc {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+        }
+    }
+}

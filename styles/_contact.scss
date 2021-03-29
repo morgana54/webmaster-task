@@ -1,0 +1,24 @@
+.contact {
+    height: 80vh;
+    width: 100vw;
+}
+
+.contact__container {
+    height: 100%;
+    @include flexCenter(row);
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    .contact__textBox {
+        width: 50%;
+        height: 80%;
+    }
+
+    .contact__inputBox {
+        width: 50%;
+        height: 80%;
+    }
+}
+
+
+

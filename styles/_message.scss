@@ -1,0 +1,23 @@
+.message {
+    height: 80vh;
+    width: 100vw;
+    background-color: #ED4C5C;
+    color: white;
+}
+
+.message__container {
+    height: 100%;
+    @include flexCenter(row);
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    .message__textBox {
+        width: 50%;
+        height: 80%;
+    }
+
+    .message__pictures {
+        width: 50%;
+        height: 80%;
+    }
+}
