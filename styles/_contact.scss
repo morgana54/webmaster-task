@@ -1,5 +1,5 @@
 .contact {
-    height: 80vh;
+    height: 60vh;
     width: 100vw;
 }
 
@@ -10,15 +10,53 @@
     flex-grow: 1;
 
     .contact__textBox {
-        width: 50%;
         height: 80%;
+        @include flexCenter(column);
+
+        .contact__title, .contact__desc {
+            display: block;
+            position: relative;
+        }
+
+        .contact__title {
+            top: -40px;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .contact__desc {
+            font-size: 14px;
+            width: 430px;
+        }
     }
 
     .contact__inputBox {
-        width: 50%;
-        height: 80%;
+        @include flexCenter(column);
+        width: 540px;
+    }
+
+    .contact__nameInputs {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact__input {
+        box-sizing: border-box;
+        width: 540px;
+        height: 56px;
+        padding: 15px 30px;
+        font-size: 16px;
+        border: 1px solid #333333;
+        border-radius: 6px;
+    }
+
+    .contact__input--name {
+        width: 250px; 
+        height: 56px;
+    }
+
+    .contact__btn {
+        align-self: flex-start;
     }
 }
-
-
 
