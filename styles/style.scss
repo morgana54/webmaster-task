@@ -14,6 +14,10 @@ $pink : #D52047;
     font-family: 'Lato', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0; 
     overflow-x: hidden;
@@ -91,6 +95,12 @@ body {
         }
     }
 
+    .hero__checkBtn {
+        padding-right: 50px;
+        font-size: 40px;
+        display: none;
+    }
+
     @media (max-width: 1200px) {
         .hero__navbar__list {
             position: absolute;
@@ -104,6 +114,10 @@ body {
             font-size: 16px;
             background-color: rgba(238, 238, 238, 0.3);
             transition: all .5s;
+
+            li {
+                padding: 5px 0;
+            }
         }
 
         .hero__navbar__title {
@@ -116,32 +130,11 @@ body {
             }
         }
         
+        .hero__checkBtn {
+            display: inline-block;
+        }
     }
-
-    // @media (min-width: 1600px) {
-    //     .hero__navbar__list {
-    //         font-size: 20px;
-    //     }
-
-    //     .hero__navbar__title {
-    //         font-size: 24px;
-    //     }
-        
-    // }
 }
-
-// .hero--bg2 #check:hover{
-
-//     .hero__navbar .hero__navbar__list {
-//             left: 0;    
-//     }
-// // box-shadow: 0 0 0 3px rgb(8, 8, 8);
-// }
-
-//     // #check:checked ~ .hero__navbar .hero__navbar__list {
-//     //     left: 0;    
-//     // }
-
 
 .hero__container {
     flex-grow: 1;
@@ -198,12 +191,27 @@ body {
 
 }
 
-input:focus {
+input:focus, button:focus {
     outline: none;
 }
 
-// TUTAJ TRZEBA DUŻO SZCZEGÓŁOWYCH MEDIA QUERY WALNĄĆ!
+#check {
+    display: none;
+}
 
-// #check {
-//     margin-right: 20px;
-// }
+#overview {
+    font-weight: 700;
+}
+
+@media (max-aspect-ratio: 400/640) {
+    .hero__container {
+        margin-top: 150px;
+    }
+}    
+
+// iPhone X
+@media (max-aspect-ratio: 300/640) {
+    .hero__container {
+        margin-top: 70px;
+    }
+}    

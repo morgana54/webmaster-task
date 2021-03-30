@@ -9,6 +9,7 @@
     height: 100px;
     @include flexCenter(row);
     font-size: 36px;
+    margin-top: 40px;
 }
 
 .technology__container {
@@ -36,7 +37,7 @@
     
         .technology__icon {
             position: relative;
-            top: -45%;
+            top: -50%;
             left: 50%;
             transform: translate(-50%, 0);
             display: block;
@@ -61,7 +62,6 @@
     .technology {
         height: 100vh;
     }
-
   
 }
 
@@ -72,6 +72,18 @@
 @media (max-width: 750px) {
     .technology {
         height: 130vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .technology {
+        height: 160vh;
+    }
+}
+
+@media (max-width: 350px) {
+    .technology {
+        height: 190vh;
     }
 }
 

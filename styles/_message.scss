@@ -13,7 +13,9 @@
     .message__text {
         width: 50%;
         height: 80%;
-        @include flexCenter(column);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
 
         .message__textBox {
             @include flexCenter(column);
@@ -22,7 +24,11 @@
             .message__title, .message__icons {
                 font-size: 36px;
                 text-align: left;
-                width: 100%;
+            }
+
+            .message__title {
+                width: 70%;
+                align-self: flex-start;
             }
 
             .message__desc {
@@ -32,6 +38,7 @@
 
             .message__icons {
                 margin-top: 40px;
+                width: 100%;
             }
         }
         
@@ -75,6 +82,52 @@
 
     .message {
         height: 90vh;
+
+        .message__text {
+            width: 80%;
+        }
     }
 
 }
+
+@media (max-width: 900px) {
+    .message__img1, .message__img2, .message__img3 {
+        height: auto;
+        width: 150%;
+    }
+
+    .message__img1, .message__img3 {
+        width: 120%;
+    }
+
+    .message .message__text {
+        width: 90%;
+
+        .message__title {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    
+    .message__img1, .message__img2, .message__img3 {
+        width: 190%;
+    }
+
+    .message__img1, .message__img3 {
+        width: 160%;
+    }
+}
+
+@media (max-width: 340px) {
+    
+    .message {
+        height: 120vh;
+    }
+}
+
+// @media (max-width: 1100px) {
+   
+
+// }

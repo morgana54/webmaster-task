@@ -27,6 +27,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   font-size: 36px;
+  margin-top: 40px;
 }
 
 .technology__container {
@@ -83,7 +84,7 @@
 
 .technology__box .technology__box__bg .technology__icon {
   position: relative;
-  top: -45%;
+  top: -50%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -111,6 +112,18 @@
 @media (max-width: 750px) {
   .technology {
     height: 130vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .technology {
+    height: 160vh;
+  }
+}
+
+@media (max-width: 350px) {
+  .technology {
+    height: 190vh;
   }
 }
 
@@ -194,8 +207,7 @@
   top: -80px;
   z-index: 1;
   background-color: white;
-  width: 260px;
-  height: 300px;
+  width: 300px;
   -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -216,15 +228,22 @@
 
 .features__box .features__textBox .features__title {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   font-size: 18px;
   font-weight: 700;
 }
 
 .features__box .features__textBox .features__desc {
   text-align: center;
-  padding: 10px;
+  padding: 10px 36px;
   font-size: 12px;
+}
+
+.features__box .features__textBox .features__readMore {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ED4C5C;
+  padding: 20px 0;
 }
 
 @media (max-width: 1230px) {
@@ -282,7 +301,8 @@
 }
 
 .contact__container .contact__textBox {
-  height: 80%;
+  height: 50%;
+  padding-right: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,6 +334,13 @@
   width: 430px;
 }
 
+@media (max-width: 700px) {
+  .contact__container .contact__textBox .contact__desc {
+    width: 90%;
+    text-align: justify;
+  }
+}
+
 .contact__container .contact__inputBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,6 +356,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 540px;
+  padding-left: 150px;
 }
 
 .contact__container .contact__nameInputs {
@@ -339,6 +367,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contact__container .contact__input {
@@ -350,6 +382,7 @@
   font-size: 16px;
   border: 1px solid #333333;
   border-radius: 6px;
+  margin-top: 30px;
 }
 
 .contact__container .contact__input--name {
@@ -360,6 +393,41 @@
 .contact__container .contact__btn {
   -ms-flex-item-align: start;
       align-self: flex-start;
+  margin-top: 30px;
+  border: none;
+  background-color: #ED4C5C;
+  color: white;
+  font-size: 14px;
+  padding: 15px;
+  width: 150px;
+  border-radius: 6px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1400px) {
+  .contact__container .contact__inputBox, .contact__container .contact__textBox {
+    padding: 0 40px;
+  }
+  .contact__container .contact__textBox {
+    height: 30%;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact__container .contact__form {
+    width: 100%;
+  }
+  .contact__container .contact__input {
+    width: 100%;
+  }
+  .contact__container .contact__input--name {
+    width: 48%;
+  }
+}
+
+#check:checked ~ ul {
+  display: block;
 }
 
 .message {
@@ -395,16 +463,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .message__container .message__text .message__textBox {
@@ -427,7 +491,12 @@
 .message__container .message__text .message__textBox .message__title, .message__container .message__text .message__textBox .message__icons {
   font-size: 36px;
   text-align: left;
-  width: 100%;
+}
+
+.message__container .message__text .message__textBox .message__title {
+  width: 70%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .message__container .message__text .message__textBox .message__desc {
@@ -437,6 +506,7 @@
 
 .message__container .message__text .message__textBox .message__icons {
   margin-top: 40px;
+  width: 100%;
 }
 
 .message__container .message__pictures {
@@ -503,10 +573,48 @@
   .message {
     height: 90vh;
   }
+  .message .message__text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .message__img1, .message__img2, .message__img3 {
+    height: auto;
+    width: 150%;
+  }
+  .message__img1, .message__img3 {
+    width: 120%;
+  }
+  .message .message__text {
+    width: 90%;
+  }
+  .message .message__text .message__title {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .message__img1, .message__img2, .message__img3 {
+    width: 190%;
+  }
+  .message__img1, .message__img3 {
+    width: 160%;
+  }
+}
+
+@media (max-width: 340px) {
+  .message {
+    height: 120vh;
+  }
 }
 
 :root {
   font-family: 'Lato', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -611,6 +719,12 @@ body {
   color: inherit;
 }
 
+.hero__navbar .hero__checkBtn {
+  padding-right: 50px;
+  font-size: 40px;
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .hero__navbar .hero__navbar__list {
     position: absolute;
@@ -626,6 +740,9 @@ body {
     -webkit-transition: all .5s;
     transition: all .5s;
   }
+  .hero__navbar .hero__navbar__list li {
+    padding: 5px 0;
+  }
   .hero__navbar .hero__navbar__title {
     font-size: 20px;
     width: 80vw;
@@ -633,6 +750,9 @@ body {
   }
   .hero__navbar .hero__navbar__title:hover {
     background-color: blue;
+  }
+  .hero__navbar .hero__checkBtn {
+    display: inline-block;
   }
 }
 
@@ -702,7 +822,27 @@ body {
   }
 }
 
-input:focus {
+input:focus, button:focus {
   outline: none;
+}
+
+#check {
+  display: none;
+}
+
+#overview {
+  font-weight: 700;
+}
+
+@media (max-aspect-ratio: 400 / 640) {
+  .hero__container {
+    margin-top: 150px;
+  }
+}
+
+@media (max-aspect-ratio: 300 / 640) {
+  .hero__container {
+    margin-top: 70px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

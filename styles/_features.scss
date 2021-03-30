@@ -34,23 +34,29 @@
         top: -80px;
         z-index: 1;
         background-color: white;
-        width: 260px;
-        height: 300px;
+        width: 300px;
         box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         @include flexCenter(column);
 
         .features__title {
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             font-size: 18px;
             font-weight: 700;
         }
 
         .features__desc {
             text-align: center;
-            padding: 10px;
+            padding: 10px 36px;
             font-size: 12px;
+        }
+
+        .features__readMore {
+            font-size: 12px;
+            font-weight: 700;
+            color: #ED4C5C;
+            padding: 20px 0;
         }
     }
 }
