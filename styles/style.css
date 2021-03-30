@@ -127,6 +127,12 @@
   }
 }
 
+@media (max-aspect-ratio: 400 / 640) {
+  .technology {
+    height: 200vh;
+  }
+}
+
 .features {
   height: 90vh;
   width: 100vw;
@@ -270,6 +276,11 @@
   }
   .features__box, .features__header {
     margin-top: 30px;
+    height: 300px;
+  }
+  .features__bgBox, .features__textBox {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 
@@ -575,6 +586,18 @@
   }
   .message .message__text {
     width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .message .message__text .message__textBox .message__title, .message .message__text .message__textBox .message__icons, .message .message__text .message__textBox .message__desc {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+  }
+  .message .message__text .message__textBox .message__title {
+    width: 100%;
   }
 }
 
@@ -709,9 +732,13 @@ body {
       flex-wrap: nowrap;
 }
 
-.hero__navbar .hero__navbar__list li {
+.hero__navbar .hero__navbar__list .hero__navbar__li {
   padding: 0 10px;
   white-space: nowrap;
+}
+
+.hero__navbar .hero__navbar__list .hero__navbar__li:hover {
+  opacity: 0.7;
 }
 
 .hero__navbar .hero__navbar__list a {
@@ -748,11 +775,12 @@ body {
     width: 80vw;
     margin-left: 25px;
   }
-  .hero__navbar .hero__navbar__title:hover {
-    background-color: blue;
-  }
   .hero__navbar .hero__checkBtn {
     display: inline-block;
+  }
+  .hero__navbar .hero__checkBtn:hover {
+    opacity: 0.7;
+    cursor: pointer;
   }
 }
 
@@ -802,8 +830,9 @@ body {
   margin-top: 5vh;
 }
 
-.hero__container .hero__container__btn:focus {
-  outline: none;
+.hero__container .hero__container__btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 @media (max-width: 1000px) {
@@ -811,14 +840,17 @@ body {
     padding: 0 0 50px 0;
     font-size: 36px;
   }
+  .hero__container .hero__container__btn {
+    margin-top: 7vh;
+  }
+}
+
+@media (max-width: 700px) {
   .hero__container .hero__container__desc {
     text-align: center;
     font-size: 18px;
     margin: 0;
     padding: 0 30px;
-  }
-  .hero__container .hero__container__btn {
-    margin-top: 7vh;
   }
 }
 

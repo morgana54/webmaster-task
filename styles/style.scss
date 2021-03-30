@@ -85,9 +85,13 @@ body {
         justify-content: flex-end;
         flex-wrap: nowrap;
         
-        li {
+        .hero__navbar__li {
             padding: 0 10px;
-            white-space: nowrap; 
+            white-space: nowrap;
+            
+            &:hover {
+                opacity: 0.7;
+            }
         }
         a {
             text-decoration: none;
@@ -124,14 +128,15 @@ body {
             font-size: 20px;
             width: 80vw;
             margin-left: 25px;
-
-            &:hover {
-                background-color: blue;
-            }
         }
         
         .hero__checkBtn {
             display: inline-block;
+
+            &:hover {
+                opacity: 0.7;
+                cursor: pointer;
+            }
         }
     }
 }
@@ -164,10 +169,6 @@ body {
         font-size: 16px;
         font-weight: 700;
         margin-top: 5vh;
-        
-        &:focus {
-            outline: none;
-        }
     }
 
     
@@ -177,16 +178,18 @@ body {
             font-size: 36px;
         }
 
+        .hero__container__btn {
+            margin-top: 7vh;
+        }    
+    }
+
+    @media (max-width: 700px) {
         .hero__container__desc {
             text-align: center;
             font-size: 18px;
             margin: 0;
             padding: 0 30px;
-        }
-
-        .hero__container__btn {
-            margin-top: 7vh;
-        }    
+        } 
     }
 
 }

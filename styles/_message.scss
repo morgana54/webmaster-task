@@ -79,14 +79,29 @@
     .message__container {
         flex-direction: column;
     }
+    
 
     .message {
         height: 90vh;
 
         .message__text {
             width: 80%;
+            justify-content: center;
+
+            .message__textBox {
+                .message__title, .message__icons, .message__desc  {
+                    align-self: center;
+                    text-align: center;
+                }
+
+                .message__title {
+                    width: 100%;
+                }
+
+            }
         }
     }
+
 
 }
 
