@@ -3,6 +3,7 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
+    background-color: #FAFAFA;
 }
 
 .features__header {
@@ -22,6 +23,7 @@
     width: 400px;
     height: 400px;
     @include flexCenter(column);
+
 
     .features__bgBox {
         justify-self: flex-start;
@@ -52,3 +54,38 @@
         }
     }
 }
+
+
+@media (max-width: 1230px) {
+    .features {
+        height: 140vh;
+    }
+
+    .features__box, .features__header {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .features {
+        height: 110vh;
+    }
+
+    .features__box, .features__header {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .features {
+        height: 220vh;
+    }
+
+    .features__box, .features__header {
+        margin-top: 30px;
+    }
+}
+
+// na koniec: zmniejszyć elemnty na iphony 5 itp. i nexus 4 + SURFACE FOLD
+// poprawić potem padding na mobilkach!!
+// ogarnąc tez indywidualną  potem na kindla żeby było spoko

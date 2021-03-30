@@ -1,5 +1,5 @@
 .message {
-    height: 80vh;
+    height: 60vh;
     width: 100vw;
     background-color: #ED4C5C;
     color: white;
@@ -8,16 +8,73 @@
 .message__container {
     height: 100%;
     @include flexCenter(row);
-    flex-wrap: wrap;
     flex-grow: 1;
 
-    .message__textBox {
+    .message__text {
         width: 50%;
         height: 80%;
+        @include flexCenter(column);
+
+        .message__textBox {
+            @include flexCenter(column);
+            width: 80%;
+
+            .message__title, .message__icons {
+                font-size: 36px;
+                text-align: left;
+                width: 100%;
+            }
+
+            .message__desc {
+                text-align: justify;
+                margin-top: 50px;
+            }
+
+            .message__icons {
+                margin-top: 40px;
+            }
+        }
+        
     }
 
     .message__pictures {
         width: 50%;
         height: 80%;
+        @include flexCenter(row);
+
+        // NA TYCH WARTOŚCIACH BĘDZIE TRZEBA ZROBIĆ DUŻO QUERIES!!! żeby cały czas ładnie wystawały
+        .message__pictureBox {
+            @include flexCenter(row);
+            width: 60%;
+            position: relative;
+
+            .message__img1, .message__img2, .message__img3 {
+                position: absolute;
+            }
+            .message__img1 {
+                right: 30%;
+                z-index: 0;
+            }
+            .message__img2 {
+                z-index: 1;
+            }
+            .message__img3 {
+                left: 30%;
+                z-index: 0;
+            }
+        }
     }
+
+ 
+}
+
+@media (max-width: 1400px) {
+    .message__container {
+        flex-direction: column;
+    }
+
+    .message {
+        height: 90vh;
+    }
+
 }

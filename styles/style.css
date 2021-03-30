@@ -102,6 +102,18 @@
   margin-top: 15px;
 }
 
+@media (max-width: 1230px) {
+  .technology {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 750px) {
+  .technology {
+    height: 130vh;
+  }
+}
+
 .features {
   height: 90vh;
   width: 100vw;
@@ -112,6 +124,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #FAFAFA;
 }
 
 .features__header {
@@ -212,6 +225,33 @@
   text-align: center;
   padding: 10px;
   font-size: 12px;
+}
+
+@media (max-width: 1230px) {
+  .features {
+    height: 140vh;
+  }
+  .features__box, .features__header {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .features {
+    height: 110vh;
+  }
+  .features__box, .features__header {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .features {
+    height: 220vh;
+  }
+  .features__box, .features__header {
+    margin-top: 30px;
+  }
 }
 
 .contact {
@@ -323,7 +363,7 @@
 }
 
 .message {
-  height: 80vh;
+  height: 60vh;
   width: 100vw;
   background-color: #ED4C5C;
   color: white;
@@ -344,21 +384,125 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.message__container .message__textBox {
+.message__container .message__text {
   width: 50%;
   height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.message__container .message__text .message__textBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+.message__container .message__text .message__textBox .message__title, .message__container .message__text .message__textBox .message__icons {
+  font-size: 36px;
+  text-align: left;
+  width: 100%;
+}
+
+.message__container .message__text .message__textBox .message__desc {
+  text-align: justify;
+  margin-top: 50px;
+}
+
+.message__container .message__text .message__textBox .message__icons {
+  margin-top: 40px;
 }
 
 .message__container .message__pictures {
   width: 50%;
   height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.message__container .message__pictures .message__pictureBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 60%;
+  position: relative;
+}
+
+.message__container .message__pictures .message__pictureBox .message__img1, .message__container .message__pictures .message__pictureBox .message__img2, .message__container .message__pictures .message__pictureBox .message__img3 {
+  position: absolute;
+}
+
+.message__container .message__pictures .message__pictureBox .message__img1 {
+  right: 30%;
+  z-index: 0;
+}
+
+.message__container .message__pictures .message__pictureBox .message__img2 {
+  z-index: 1;
+}
+
+.message__container .message__pictures .message__pictureBox .message__img3 {
+  left: 30%;
+  z-index: 0;
+}
+
+@media (max-width: 1400px) {
+  .message__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .message {
+    height: 90vh;
+  }
 }
 
 :root {
@@ -417,7 +561,7 @@ body {
 }
 
 .hero__navbar .hero__navbar__title {
-  font-size: 18px;
+  font-size: 2.2vh;
   width: 30vw;
   margin: 0 14vw;
   font-weight: 700;
@@ -486,6 +630,9 @@ body {
     font-size: 20px;
     width: 80vw;
     margin-left: 25px;
+  }
+  .hero__navbar .hero__navbar__title:hover {
+    background-color: blue;
   }
 }
 
