@@ -8,8 +8,6 @@
 $orange : #EE3D1B;
 $pink : #D52047;
 
-// dzielić style na sekcje i importować z underscorem np. _section2
-
 :root {
     font-family: 'Lato', sans-serif;
 }
@@ -169,6 +167,13 @@ body {
         font-size: 16px;
         font-weight: 700;
         margin-top: 5vh;
+        transition: all .3s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $pink;
+            color: white;
+        }
     }
 
     

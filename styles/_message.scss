@@ -49,7 +49,6 @@
         height: 80%;
         @include flexCenter(row);
 
-        // NA TYCH WARTOŚCIACH BĘDZIE TRZEBA ZROBIĆ DUŻO QUERIES!!! żeby cały czas ładnie wystawały
         .message__pictureBox {
             @include flexCenter(row);
             width: 60%;
@@ -142,7 +141,3 @@
     }
 }
 
-// @media (max-width: 1100px) {
-   
-
-// }
